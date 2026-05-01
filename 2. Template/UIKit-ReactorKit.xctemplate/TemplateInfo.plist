@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Identifier</key>
+	<string>com.kimdonghyeon.UIKitReactorKitTemplate</string>
+	<key>Name</key>
+	<string>UIKit - ReactorKit</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___ViewController.swift</string>
+	<key>DefaultCompletionName</key>
+	<string>MyScene</string>
+	<key>Description</key>
+	<string>ViewController + View + Reactor 템플릿입니다</string>
+	<key>Summary</key>
+	<string>Creates ViewController, View, and Reactor files</string>
+	<key>SortOrder</key>
+	<string>40</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>New Scene Name:</string>
+			<key>Description</key>
+			<string>기준이 될 이름을 입력하세요</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Required</key>
+			<true/>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>includeViewController</string>
+			<key>Name</key>
+			<string>Include ViewController</string>
+			<key>Description</key>
+			<string>ViewController 파일 생성 여부</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>includeReactor</string>
+			<key>Name</key>
+			<string>Include Reactor</string>
+			<key>Description</key>
+			<string>Reactor 파일 생성 여부</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>includeView</string>
+			<key>Name</key>
+			<string>Include View</string>
+			<key>Description</key>
+			<string>View 파일 생성 여부</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

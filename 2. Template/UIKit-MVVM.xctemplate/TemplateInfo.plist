@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Identifier</key>
+	<string>com.kimdonghyeon.UIKitMVVMTemplate</string>
+	<key>Name</key>
+	<string>UIKit - MVVM</string>
+	<key>DefaultCompletionName</key>
+	<string>MyScene</string>
+	<key>Description</key>
+	<string>ViewController + View + ViewModel 템플릿입니다</string>
+	<key>Summary</key>
+	<string>Creates ViewController, View, and ViewModel files</string>
+	<key>SortOrder</key>
+	<string>30</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>New Scene Name:</string>
+			<key>Description</key>
+			<string>기준이 될 이름을 입력하세요</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Required</key>
+			<true/>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>moduleViewController</string>
+			<key>Name</key>
+			<string>View Controller Name:</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_productName:identifier___ViewController</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>moduleViewModel</string>
+			<key>Name</key>
+			<string>View Model Name:</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_productName:identifier___ViewModel</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>moduleView</string>
+			<key>Name</key>
+			<string>View Name:</string>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>___VARIABLE_productName:identifier___View</string>
+		</dict>
+	</array>
+</dict>
+</plist>
