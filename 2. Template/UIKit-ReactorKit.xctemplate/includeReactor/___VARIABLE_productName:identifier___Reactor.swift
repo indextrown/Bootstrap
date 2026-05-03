@@ -1,4 +1,4 @@
-//  ___FILEBASENAME___.swift
+//  ___VARIABLE_productName:identifier___Reactor.swift
 //  ___PACKAGENAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.

@@ -1,4 +1,4 @@
-//  ___FILEBASENAME___.swift
+//  ___VARIABLE_productName:identifier___ViewController.swift
 //  ___PACKAGENAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
@@ -8,12 +8,10 @@ import ReactorKit
 import RxSwift
 import UIKit
 
-final class ___FILEBASENAME___: UIViewController, View {
+final class ___VARIABLE_productName:identifier___ViewController: UIViewController, View {
     typealias Reactor = ___VARIABLE_productName:identifier___Reactor
 
     var disposeBag = DisposeBag()
-
-    private let customView = ___VARIABLE_productName:identifier___View()
 
     // MARK: - Initializer
     init(reactor: Reactor) {
@@ -26,8 +24,9 @@ final class ___FILEBASENAME___: UIViewController, View {
     }
 
     // MARK: - LifeCycle
-    override func loadView() {
-        view = customView
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBackground
     }
 
     func bind(reactor: Reactor) {
@@ -46,5 +45,5 @@ final class ___FILEBASENAME___: UIViewController, View {
 }
 
 #Preview {
-    ___FILEBASENAME___(reactor: ___VARIABLE_productName:identifier___Reactor())
+    ___VARIABLE_productName:identifier___ViewController(reactor: ___VARIABLE_productName:identifier___Reactor())
 }

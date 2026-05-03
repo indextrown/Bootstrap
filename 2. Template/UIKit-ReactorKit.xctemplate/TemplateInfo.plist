@@ -9,7 +9,7 @@
 	<key>Name</key>
 	<string>UIKit - ReactorKit</string>
 	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___ViewController.swift</string>
+	<string>___VARIABLE_productName:identifier___ViewController.swift</string>
 	<key>DefaultCompletionName</key>
 	<string>MyScene</string>
 	<key>Description</key>

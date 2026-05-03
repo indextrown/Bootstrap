@@ -1,4 +1,4 @@
-//  ___FILEBASENAME___View.swift
+//  ___VARIABLE_productName:identifier___View.swift
 //  ___PACKAGENAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
@@ -34,5 +34,5 @@ final class ___VARIABLE_productName:identifier___View: UIView {
 }
 
 #Preview {
-    ___FILEBASENAME___()
+    ___VARIABLE_productName:identifier___View()
 }
