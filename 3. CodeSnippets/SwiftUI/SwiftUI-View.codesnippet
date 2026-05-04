@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>baseswiftuiview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct &lt;#ViewName#&gt;: View {
+    var body: some View {
+        VStack(spacing: 16) {
+            &lt;#content#&gt;
+        }
+        .padding()
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6AF96289-D3F9-4539-8973-77F64DBC9A40</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Basic SwiftUI View scaffold.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Base SwiftUI View</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
