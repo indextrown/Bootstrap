@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>baseuicompositionallayout</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private func makeLayout() -&gt; UICollectionViewLayout {
+    let itemSize = NSCollectionLayoutSize(
+        widthDimension: .fractionalWidth(1.0),
+        heightDimension: .estimated(&lt;#44#&gt;)
+    )
+    let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+    let groupSize = NSCollectionLayoutSize(
+        widthDimension: .fractionalWidth(1.0),
+        heightDimension: .estimated(&lt;#44#&gt;)
+    )
+    let group = NSCollectionLayoutGroup.vertical(
+        layoutSize: groupSize,
+        subitems: [item]
+    )
+
+    let section = NSCollectionLayoutSection(group: group)
+    section.interGroupSpacing = 12
+    section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)
+
+    return UICollectionViewCompositionalLayout(section: section)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CC0A839E-86AA-44A6-9E5A-238CC676123D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Basic UICollectionViewCompositionalLayout factory.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Base UIKit Compositional Layout</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

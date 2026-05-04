@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>baseuidiffabledatasource</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private var dataSource: UICollectionViewDiffableDataSource&lt;&lt;#SectionIdentifierType#&gt;, &lt;#ItemIdentifierType#&gt;&gt;?
+
+private func configureDataSource() {
+    dataSource = UICollectionViewDiffableDataSource&lt;&lt;#SectionIdentifierType#&gt;, &lt;#ItemIdentifierType#&gt;&gt;(
+        collectionView: &lt;#collectionView#&gt;
+    ) { collectionView, indexPath, itemIdentifier in
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: &lt;#CellClass#&gt;.identifier,
+            for: indexPath
+        ) as? &lt;#CellClass#&gt; else {
+            return UICollectionViewCell()
+        }
+
+        return cell
+    }
+}
+
+private func applySnapshot(items: [&lt;#ItemIdentifierType#&gt;]) {
+    var snapshot = NSDiffableDataSourceSnapshot&lt;&lt;#SectionIdentifierType#&gt;, &lt;#ItemIdentifierType#&gt;&gt;()
+    snapshot.appendSections([&lt;#section#&gt;])
+    snapshot.appendItems(items, toSection: &lt;#section#&gt;)
+    dataSource?.apply(snapshot, animatingDifferences: true)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1774C60B-0AF8-47F8-B1EA-667FF31743B3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UICollectionViewDiffableDataSource setup and snapshot apply.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Base UIKit Diffable DataSource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
